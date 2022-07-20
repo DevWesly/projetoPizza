@@ -1,29 +1,29 @@
 Fase 1 - Setup Inicial:
-    ☐ Faça um fork desse repositório para a sua conta github
-    ☐ Clone o seu repositório para a sua máquina local
-    ☐ Inicie um projeto node na pasta deste projeto
+    ✔ Faça um fork desse repositório para a sua conta github @started(22-07-20 14:26) @done(22-07-20 14:26) @lasted(17s)
+    ✔ Clone o seu repositório para a sua máquina local @started(22-07-20 14:26) @done(22-07-20 14:26) @lasted(25s)
+    ✔ Inicie um projeto node na pasta deste projeto @started(22-07-20 14:26) @done(22-07-20 14:26) @lasted(30s)
     
     Verificações: 
-        ☐ Se o comando npm init criou um arquivo package.json na raíz do seu projeto
+        ✔ Se o comando npm init criou um arquivo package.json na raíz do seu projeto @started(22-07-20 14:26) @done(22-07-20 14:31) @lasted(5m17s)
 
 
 
 Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
-    ☐ Instale a biblioteca express no projeto
-    ☐ Faça com que o git ignore a pasta node_modules
-    ☐ Crie um arquivo chamado app.js na raíz do seu projeto
-    ☐ No app.js:
-        ☐ Importe o express
-        ☐ Crie um aplicação web com o express e guarde-a numa constante app.
-        ☐ Crie uma rota get para o endereço '/'.
+    ✔ Instale a biblioteca express no projeto @started(22-07-20 14:31) @done(22-07-20 14:31) @lasted(58s)
+    ✔ Faça com que o git ignore a pasta node_modules @started(22-07-20 14:32) @done(22-07-20 14:37) @lasted(5m29s)
+    ✔ Crie um arquivo chamado app.js na raíz do seu projeto @started(22-07-20 14:37) @done(22-07-20 14:37) @lasted(56s)
+    ✔ No app.js: @started(22-07-20 14:37) @done(22-07-20 14:37) @lasted(59s)
+        ✔ Importe o express @started(22-07-20 14:38) @done(22-07-20 14:38) @lasted(55s)
+        ✔ Crie um aplicação web com o express e guarde-a numa constante app. @started(22-07-20 14:38) @done(22-07-20 14:40) @lasted(2m9s)
+        ✔ Crie uma rota get para o endereço '/'. @started(22-07-20 14:40) @done(22-07-20 14:42) @lasted(2m25s)
             Quando acessada, essa rota deve responder um 'Olá, visitante!' para o cliente
-        ☐ Escreva uma linha que iniciará o servidor na porta 3000 (app.listen)
+        ✔ Escreva uma linha que iniciará o servidor na porta 3000 (app.listen) @started(22-07-20 14:42) @done(22-07-20 14:45) @lasted(3m18s)
             Quando o servidor iniciar, ele deve escrever no console: "Servidor rodando na porta 3000"
 
     Verificações:
-        ☐ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console
-        ☐ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!"
-        ☐ Verifique se a pasta node_modules aparece listada no comando git status
+        ✔ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console @done(22-07-20 14:49)
+        ✔ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!" @done(22-07-20 14:49)
+        ☐ Verifique se a pasta node_modules aparece listada no comando git status @started(22-07-20 14:49)
 
 
 
