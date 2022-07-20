@@ -23,7 +23,7 @@ Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
     Verificações:
         ✔ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console @done(22-07-20 14:49)
         ✔ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!" @done(22-07-20 14:49)
-        ☐ Verifique se a pasta node_modules aparece listada no comando git status @started(22-07-20 14:49)
+        ✔ Verifique se a pasta node_modules aparece listada no comando git status @started(22-07-20 14:49) @done(22-07-20 16:03) @lasted(1h14m26s)
 
 
 
@@ -43,27 +43,27 @@ Fase 3 - Instalação do nodemon e configuração para auto restart:
 
         
 Fase 4 - Organizando o MVC:
-    ☐ Crie uma pasta chamada routes na raíz do projeto.
-    ☐ Na pasta routes, crie um arquivo chamado PizzasRouter.js
+    ✔ Crie uma pasta chamada routes na raíz do projeto. @started(22-07-20 15:11) @done(22-07-20 15:11) @lasted(10s)
+    ✔ Na pasta routes, crie um arquivo chamado PizzasRouter.js @started(22-07-20 15:11) @done(22-07-20 15:11) @lasted(38s)
     ☐ No arquivo PizzasRouter.js:
-        ☐ Importe o express.
-        ☐ Crie um roteador e armazene-o numa constante router
-        ☐ Exporte essa constante
+        ✔ Importe o express. @started(22-07-20 15:49) @done(22-07-20 15:50) @lasted(1m41s)
+        ✔ Crie um roteador e armazene-o numa constante router @done(22-07-20 15:58)
+        ✔ Exporte essa constante @done(22-07-20 15:58)
 
-    ☐ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter.
+    ✔ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter. @started(22-07-20 15:59) @done(22-07-20 16:28) @lasted(29m25s)
         Atente para que o uso do PizzasRouter ocorra depois da criação da
         aplicação mas antes da linha que iniciar.
-    ☐ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____)
-    ☐ Crie uma pasta chamada controllers na raíz do projeto.
-    ☐ Na pasta controllers crie um arquivo chamado PizzasController.js
+    ✔ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____) @started(22-07-20 16:32) @done(22-07-20 16:32) @lasted(59s)
+    ✔ Crie uma pasta chamada controllers na raíz do projeto. @done(22-07-20 16:33)
+    ✔ Na pasta controllers crie um arquivo chamado PizzasController.js @done(22-07-20 16:33)
         Em passos a frente, o arquivo PizzasController.js irá conter as funções
         responsáveis por tratar da requisição e da resposta a ser enviada para o cliente.
         Essas funções chamaremos de controllers ou controladores.
-    ☐ No arquvo PizzasController.js crie um objeto literal vazio e o exporte utilizando o module.exports
-    ☐ Crie uma pasta chamada public.
-    ☐ Dentro da pasta public, crie duas pastas: css e img
-    ☐ Mova os arquivos que estão na pasta imagens para a pasta public/img
-    ☐ Remova a pasta imagens
+    ✔ No arquvo PizzasController.js crie um objeto literal vazio e o exporte utilizando o module.exports @done(22-07-20 16:35)
+    ✔ Crie uma pasta chamada public. @done(22-07-20 16:35)
+    ✔ Dentro da pasta public, crie duas pastas: css e img @started(22-07-20 16:35) @done(22-07-20 16:36) @lasted(1m2s)
+    ✔ Mova os arquivos que estão na pasta imagens para a pasta public/img @started(22-07-20 16:37) @done(22-07-20 16:37) @lasted(26s)
+    ✔ Remova a pasta imagens @started(22-07-20 16:37) @done(22-07-20 16:37) @lasted(37s)
     
     Verificações:
         A cada alteração salva nos passos da Fase 4
