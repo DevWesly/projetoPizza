@@ -28,17 +28,17 @@ Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
 
 
 Fase 3 - Instalação do nodemon e configuração para auto restart:
-    ☐ Instale o nodemon no projeto como dependência de desenvolvimento
+    ✔ Instale o nodemon no projeto como dependência de desenvolvimento @done(22-07-20 14:58)
     https://pt.stackoverflow.com/questions/163785/qual-a-diferen%C3%A7a-entre-dependencies-e-devdependencies
 
-    ☐ Altere o package.json:
-        ☐ Acrescente uma propriedade "start" ao objeto "scripts".
-        ☐ A propriedade start deve conter a string "nodemon app.js"
-    ☐ Execute o comando npm start no console.
+    ☐ Altere o package.json:   
+        ✔ Acrescente uma propriedade "start" ao objeto "scripts". @done(22-07-20 14:59)
+        ✔ A propriedade start deve conter a string "nodemon app.js" @started(22-07-20 15:00) @done(22-07-20 15:00) @lasted(34s)
+    ✔ Execute o comando npm start no console. @started(22-07-20 15:00) @done(22-07-20 15:01) @lasted(1m25s)
 
     Verificações:
-        ☐ Veja se a mensagem "Servidor rodando na porta 3000" aparece no console.
-        ☐ Abra o navegador e acesse http://localhost:3000. A mensagem 'Olá, visitante!' deve aparecer na tela.
+        ✔ Veja se a mensagem "Servidor rodando na porta 3000" aparece no console. @started(22-07-20 15:01) @done(22-07-20 15:01) @lasted(32s)
+        ✔ Abra o navegador e acesse http://localhost:3000. A mensagem 'Olá, visitante!' deve aparecer na tela. @started(22-07-20 15:01) @done(22-07-20 15:01) @lasted(35s)
 
 
         
