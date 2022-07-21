@@ -5,6 +5,15 @@ const express = require('express');
 //criando a funcao app do express.
 const app = express();
 
+//importando a biblioteca path
+const path = require('path');
+
+// Configuração do Template Engine
+app.set('view engine','ejs');
+
+// Configuração do Template Engine
+app.set('view engine','ejs');
+
 //importando PizzasRouter.
 const PizzasRouter = require("./routes/PizzasRouter");
 
