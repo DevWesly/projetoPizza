@@ -18,9 +18,9 @@ app.set('view engine','ejs');
 const PizzasRouter = require("./routes/PizzasRouter");
 
 //criando a rota '/' no servidor
-app.get('/',(req,res)=>{
-    res.send("ola Vizitante")
-});
+// app.get('/',(req,res)=>{
+//     res.send("ola Vizitante")
+// });
 
 
 //Utilizando o PizzasRouter como roteador da aplicação
