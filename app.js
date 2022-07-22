@@ -11,8 +11,10 @@ const path = require('path');
 // Configuração do Template Engine
 app.set('view engine','ejs');
 
-// Configuração do Template Engine
-app.set('view engine','ejs');
+//config a pasta public
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname,"public")));
+
 
 //importando PizzasRouter.
 const PizzasRouter = require("./routes/PizzasRouter");
