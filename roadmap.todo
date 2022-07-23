@@ -188,7 +188,7 @@ Fase 10 - Acrescentando estilo à página de pizza:
         O que se deve ver é uma página com as informações de uma pizza, agora, estilizada.
 
 Fase 11 - Criando link da página inicial para página de detalhes de uma pizza:
-    ☐ Na view da página inicial, ou seja, no arquivo pizzas.ejs altere o link:
+    ✔ Na view da página inicial, ou seja, no arquivo pizzas.ejs altere o link: @done(22-07-23 14:12)
     Onde se vê:
         <a href="pizza.html">Ver Mais</a>
     Deve se ver:
