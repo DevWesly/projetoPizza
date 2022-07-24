@@ -17,6 +17,8 @@ router.get('/pizzas/:id',PizzasCrontroller.mostrar);
 
 router.get('/teste', PizzasCrontroller.teste);
 
+router.get('/pizzas/buscavazia', PizzasCrontroller.buscaVazia);
+
 
 
 //exportando 

@@ -217,12 +217,12 @@ Fase 12 - Exibindo pizzas buscadas:
                     Atenção: A busca não deve ser sensível ao caso, ou seja, 
                     buscando por 'm' deve encontrar 'Marguerita', mesmo tendo-se
                     buscado pela letra minúscula
-                - Armazene o resultado dessa filtragem numa variável resultado
-                - Renderize a view pizzas.ejs passando para ela um objeto literal contendo:
+                ✔ Armazene o resultado dessa filtragem numa variável resultado @done(22-07-24 13:48)
+                ✔ Renderize a view pizzas.ejs passando para ela um objeto literal contendo:    @done(22-07-24 13:48)
                     1. Um campo de nome pizzas e de valor igual a variável resultado.
                     2. Um campo de nome busca com o valor igual a variável trechoBuscado.
                 Dica: res.render('pizzas.ejs',{campo1: valor1, campo2: valor2})
-    Verificações:
+    ✔ Verificações: @done(22-07-24 13:47)
         Com o servidor rodando, visite http://localhost:3000 e busque por ba
         Devem aparecer somente as pizzas Baiana e Meat & Bacon
 

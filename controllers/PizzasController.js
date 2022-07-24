@@ -19,21 +19,25 @@ module.exports = {
     },
     buscar:(req,res)=>{
         let trechoBuscado = req.query.q;
+        let resultado = pizzas.filter(pizza => pizza.nome.toUpperCase().includes(trechoBuscado.toUpperCase()));
+        let resultadoN = resultado.length;
 
         if(trechoBuscado == ""){res.redirect('/')}
+        if(resultadoN==[]){res.render('modelo.ejs')}
         else{
-            // let novoArray = pizzas.filter(function(pizza) {
-            //     return pizza.nome == trechoBuscado;
-            //   });
-
-            //lembrar de pedir ajuda para prof explicar direitinho pq não entendi muito bem
-            let resultado = pizzas.filter(pizza => pizza.nome.toUpperCase().includes(trechoBuscado.toUpperCase()));
+                       //lembrar de pedir ajuda para prof explicar direitinho pq não entendi muito bem
+            // let resultado = pizzas.filter(pizza => pizza.nome.toUpperCase().includes(trechoBuscado.toUpperCase()));
             res.render('pizzas.ejs',{pizzas:resultado,trechoBuscado});
 
         
         }
 
     },
+
+    buscaVazia:(req,res)=>{
+        res.send('ja farei');
+    },
+
     teste:(req,res)=>{
         res.send('Pagina de testes');
     }
