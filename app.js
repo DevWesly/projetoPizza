@@ -5,6 +5,13 @@ const express = require('express');
 //criando a funcao app do express.
 const app = express();
 
+//configurando servidor para receber e trabalhar com metodo post 
+// e trabalhar com as informações via json
+// app.use(express.json);
+
+// app.use(express.urlencoded({extended:false}));
+
+
 //importando a biblioteca path
 const path = require('path');
 
@@ -19,6 +26,9 @@ app.use(express.static(path.join(__dirname,"public")));
 //importando PizzasRouter.
 const PizzasRouter = require("./routes/PizzasRouter");
 
+//importando rota teste
+const RotaTeste = require("./routes/rotaTeste")
+
 //criando a rota '/' no servidor
 // app.get('/',(req,res)=>{
 //     res.send("ola Vizitante")
@@ -27,6 +37,9 @@ const PizzasRouter = require("./routes/PizzasRouter");
 
 //Utilizando o PizzasRouter como roteador da aplicação
 app.use('/',PizzasRouter);
+
+//utilizando o RotaTeste como roteador da aplicação
+app.use(RotaTeste);
 
 //criando um endereços para rodar a aplicação
 app.listen(3001,()=>{

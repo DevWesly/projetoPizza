@@ -226,35 +226,35 @@ Fase 12 - Exibindo pizzas buscadas:
         Com o servidor rodando, visite http://localhost:3000 e busque por ba
         Devem aparecer somente as pizzas Baiana e Meat & Bacon
 
-Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
-    ☐ No pizzas.ejs:
+✔ Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada: @done(22-07-24 15:24)
+    ✔ No pizzas.ejs: @done(22-07-24 15:24)
         Crie um elemento por cento e nele um if que testa se
         o tamanho do array de pizzas é zero. Caso seja, mostrar mensagem...
         <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
         Caso contrário, exibir as pizzas do array de pizza com o for que já foi codificado.
-    Verificações:
+    ✔ Verificações: @done(22-07-24 15:24)
         Com o servidor rodando, visite http://localhost.com e busque por "Jacaré"
         Você deve ver uma mensagem: "Nenhuma pizza encontrada. Tente ser menos
         específico na sua busca."
 
-Fase 14 - Fazendo com que o que o usuário digitou na busca não seja perdido:
-    ☐ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio.
-    ☐ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia).
+✔ Fase 14 - Fazendo com que o que o usuário digitou na busca não seja perdido: @done(22-07-27 14:40)
+    ✔ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio. @done(22-07-27 14:40)
+    ✔ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia). @done(22-07-27 14:40)
 
-Fase 15 - Passando de uma pizza para outra:
+✔ Fase 15 - Passando de uma pizza para outra: @done(22-07-27 15:23)
     Nessa fase, faremos com que na página que exibe os detalhes de
     uma pizza, seja possível navegar para a próxima pizza e para
     a pizza anterior clicando nos links em forma de seta
-    ☐ Na função mostrar no arquivo PizzasController:
-        - Declare duas variáveis: idProxima e idAnterior 
-        - Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id)
-        - Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao
-        - Guarde a pizza da posicao encontrada na variável pizza
-        - Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza
-        - Caso contrário, idProxima deve ter o id da pizza da posição seguinte
-        - Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza
-        - Caso controário, idAnterior deve receber o id da pizza na posição anterior.
-    ☐ No arquivo pizza.ejs, adeque os links:
+    ✔ Na função mostrar no arquivo PizzasController: @done(22-07-27 15:23)
+        ✔ Declare duas variáveis: idProxima e idAnterior @done(22-07-27 15:23)
+        ✔ Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id) @done(22-07-27 15:23)
+        ✔ Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao @done(22-07-27 15:23)
+        ✔ Guarde a pizza da posicao encontrada na variável pizza @done(22-07-27 15:23)
+        ✔ Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza @done(22-07-27 15:23)
+        ✔ Caso contrário, idProxima deve ter o id da pizza da posição seguinte @done(22-07-27 15:23)
+        ✔ Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza @done(22-07-27 15:23)
+        ✔ Caso controário, idAnterior deve receber o id da pizza na posição anterior. @done(22-07-27 15:23)
+    ✔ No arquivo pizza.ejs, adeque os links: @done(22-07-27 15:24)
         Onde se vê:
             <a href="pizza.html" class="prev">
         Deve se ver:

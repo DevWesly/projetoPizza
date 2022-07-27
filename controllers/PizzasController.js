@@ -3,42 +3,56 @@ const pizzas = require("../database/Pizzas.json");
 module.exports = {
     listar: (req, res) => {
         // let pizzas = require("../database/Pizzas.json");
-        res.render('pizzas.ejs',{pizzas});
-    },
-    mostrar:(req,res)=>{
-        //capturar id 
-        let idDaPizza = req.params.id;
-
-        //buscar se no array de pizzas tem um id igual
-        let pizza = pizzas.find((p)=>{
-            return p.id == idDaPizza;
+        res.render('pizzas.ejs', {
+            pizzas,
+            busca: ""
         });
-        //renderiza a view pizza.ejs com a variavel pizza
-        res.render('pizza.ejs',{pizza});
-
     },
-    buscar:(req,res)=>{
+    mostrar: (req, res) => {
+        //capturar id 
+        let id = req.params.id;
+        let idProxima ;
+        let idAnterior ;
+        let posicao = pizzas.findIndex(p => p.id == id);
+        let pizza = pizzas[posicao];
+
+        if(posicao == pizzas.length -1){
+            idProxima = pizzas[0].id
+        }else{idProxima = pizzas[posicao + 1].id};
+
+        if(posicao == 0 ){
+            idAnterior = pizzas[pizzas.length-1].id;
+        }else{idAnterior = pizzas[posicao - 1].id};
+
+        console.log(posicao);
+
+        res.render('pizza.ejs',{pizza,idAnterior,idProxima});
+    },
+    buscar: (req, res) => {
         let trechoBuscado = req.query.q;
         let resultado = pizzas.filter(pizza => pizza.nome.toUpperCase().includes(trechoBuscado.toUpperCase()));
-        let resultadoN = resultado.length;
 
-        if(trechoBuscado == ""){res.redirect('/')}
-        if(resultadoN==[]){res.render('modelo.ejs')}
-        else{
-                       //lembrar de pedir ajuda para prof explicar direitinho pq não entendi muito bem
+        if (trechoBuscado == "") {
+            res.redirect('/')
+        } else {
+
+
+            //lembrar de pedir ajuda para prof explicar direitinho pq não entendi muito bem
             // let resultado = pizzas.filter(pizza => pizza.nome.toUpperCase().includes(trechoBuscado.toUpperCase()));
-            res.render('pizzas.ejs',{pizzas:resultado,trechoBuscado});
+            res.render('pizzas.ejs', {
+                pizzas: resultado, busca: trechoBuscado
+            });
 
-        
+
         }
 
     },
 
-    buscaVazia:(req,res)=>{
+    buscaVazia: (req, res) => {
         res.send('ja farei');
     },
 
-    teste:(req,res)=>{
+    teste: (req, res) => {
         res.send('Pagina de testes');
     }
 };

@@ -15,9 +15,10 @@ router.get('/pizzas/busca', PizzasCrontroller.buscar);
 
 router.get('/pizzas/:id',PizzasCrontroller.mostrar);
 
-router.get('/teste', PizzasCrontroller.teste);
+router.get('/teste1', PizzasCrontroller.teste);
 
-router.get('/pizzas/buscavazia', PizzasCrontroller.buscaVazia);
+
+
 
 
 
