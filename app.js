@@ -5,11 +5,11 @@ const express = require('express');
 //criando a funcao app do express.
 const app = express();
 
-//configurando servidor para receber e trabalhar com metodo post 
+// configurando servidor para receber e trabalhar com metodo post 
 // e trabalhar com as informações via json
-// app.use(express.json);
+app.use(express.json());
 
-// app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({extended:false}));
 
 
 //importando a biblioteca path
