@@ -17,6 +17,10 @@ router.get('/pizzas/:id',PizzasCrontroller.mostrar);
 
 router.get('/teste1', PizzasCrontroller.teste);
 
+router.get('/criar', PizzasCrontroller.criarPizza);
+
+router.post('/criar', PizzasCrontroller.guardarPizza);
+
 
 
 
