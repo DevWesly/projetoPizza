@@ -12,6 +12,18 @@ module.exports = {
             busca: ""
         });
     },
+    delete: (req, res) => {
+        let id = req.params.id;
+        for (let i = 0; i < pizzas.length; i++){
+            if(pizzas[i].id == id){
+                pizzas.splice(i,1);
+                fs.writeFileSync(path.join(__dirname, '../database/Pizzas.json'), JSON.stringify(pizzas, null, 4));
+            }
+        }
+    
+        res.redirect('/');
+
+    },
     mostrar: (req, res) => {
         //capturar id 
         let id = req.params.id;
@@ -31,8 +43,6 @@ module.exports = {
         } else {
             idAnterior = pizzas[posicao - 1].id
         };
-
-        console.log(posicao);
 
         res.render('pizza.ejs', {
             pizza,

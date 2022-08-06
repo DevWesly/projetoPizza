@@ -111,41 +111,5 @@
         "preco": 38.5,
         "img": "/img/fracatu.jpg",
         "destaque": true
-    },
-    {
-        "id": 10,
-        "nome": "Rucula",
-        "ingredientes": [
-            "beringela ",
-            " camaraão",
-            " feijão"
-        ],
-        "preco": "100",
-        "img": "/img/bg.jpeg",
-        "destaque": false
-    },
-    {
-        "id": 11,
-        "nome": "",
-        "ingredientes": [
-            ""
-        ],
-        "preco": "",
-        "img": "/img/",
-        "destaque": false
-    },
-    {
-        "id": 12,
-        "nome": "Portuguesa",
-        "ingredientes": [
-            "ovo",
-            "cebola",
-            "oregma",
-            "azeitona",
-            " queija"
-        ],
-        "preco": "19.90",
-        "img": "/img/quatroqueijos.jpg",
-        "destaque": false
     }
 ]

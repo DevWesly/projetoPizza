@@ -5,11 +5,15 @@ const express = require('express');
 //criando a funcao app do express.
 const app = express();
 
+var methodOverride = require('method-override');
+
 // configurando servidor para receber e trabalhar com metodo post 
 // e trabalhar com as informações via json
 app.use(express.json());
 
 app.use(express.urlencoded({extended:false}));
+
+app.use(methodOverride('_method'))
 
 
 //importando a biblioteca path

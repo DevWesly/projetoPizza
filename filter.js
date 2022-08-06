@@ -82,7 +82,7 @@ let pizza = [{
     "destaque": true
 }];
 
-let pizza2  = [{
+let pizza2 = [{
     "id": 1002,
     "nome": "Rúcula",
     "ingredientes": ["mussarela", "rúcula", "tomate seco"],
@@ -91,5 +91,14 @@ let pizza2  = [{
     "destaque": true
 }];
 
-let total = 
-console.log(total)
+
+let id = 11;
+
+for (let i = 0; i < pizzas.length; i++) {
+    if (pizzas[i].id == id) {
+        console.log(pizzas[i])
+       pizzas.splice(i,1);
+      
+    }
+};
+console.table(pizzas);
