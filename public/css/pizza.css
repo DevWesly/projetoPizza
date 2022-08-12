@@ -1,3 +1,37 @@
+body{
+	background:#000;
+	display:grid;
+	align-items:center;
+	text-align: center;
+	justify-content: center;
+
+	align-content: center;
+	
+	
+
+}
+form {
+	width: 100vw;
+	/* background-color: blue; */
+	padding: 30px;
+	align-items:center;
+	/* display:grid; */
+	/* align-content: center; */
+	
+	padding: 20px;
+	
+}
+form label {
+	font-size: 20px;
+	align-items: center;
+	/* background-color: aquamarine; */
+	display: block;
+	border-radius: 10px;
+	}
+
+
+
+
 main {
 	width: 60%;
 	margin: 30px auto;

@@ -1,52 +1,98 @@
-
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: bold;
+}
 body{
-    position: relative;
-	font-size: 1.5rem;  
-    justify-content: center;
-    
-   
-    
-
+	background-image: url(../img/pizzaFundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
-h1{
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    /* background-color: brown; */
     width: 100vw;
-    /* background-color: blue; */
-    text-align: center;
-    color:rgb(99, 18, 18)
+
 }
 
-form {
-    justify-content: center;
 
-    width: 100vw;
-    height: 100%;
-    display:grid;
-    position:relative;
-    align-items:center;
-    /* text-align:center; */
-	padding: 10px;
-	min-width: 440px;
-    font-family: 'Montserrat', sans-serif;
-	/* background-color: rgba(44, 0, 0, 0.5); */
+.form{
+
+    background-color: rgba(0, 0, 0, 0.8);
+    /* border: 2px solid black; */
+    width: 349px;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    /* position:absolute; */
     border-radius: 10px;
-    height: 15px;
-    margin-top: 10px;
-    position: relative;
-    /* background-color: blue; */
-        
+}
+
+ .form h1{
+    color: rgb(220, 220, 220);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    margin-bottom: 30px;
+    font-size: 35px;
+    width: 345px;
+    /* border: 2px solid black; */
+
+    
+
+}
+.form label{
+    color: rgb(255, 255, 255);
+    /* background-color: blueviolet; */
+    width:100%;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid black;
+
+
+    
+
 }
 button{
-    width: 70px;
-    height: 40px;
-    background-color: brown;
-    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    font-size:large;
+    border-radius: 6px;
+    color: brown;
+    /* margin-top: 30px; */
 }
+button:hover{
+    color: rgb(255, 255, 252);
+    cursor: pointer;
+    background-color: brown;
+    transition: 0.3s;
+}
+input{
+    width: 300px;
+    height: 24px;
+    font-size: 16px;
+}
+input:hover{
+    background-color: rgb(186, 162, 162);
+    transition: 0.3s;
+    border-radius: 6px;
 
-img{
-    margin-top: 20px;
 }
