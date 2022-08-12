@@ -1,0 +1,78 @@
+[
+    {
+        "id": 7,
+        "nome": "Napolitana",
+        "ingredientes": [
+            "mussarela",
+            "gorgonzola",
+            "provolone",
+            "parmesão"
+        ],
+        "preco": 55.5,
+        "img": "/img/marguerita.jpg",
+        "destaque": true
+    },
+    {
+        "id": 8,
+        "nome": "Baiana",
+        "ingredientes": [
+            "mussarela",
+            "gorgonzola",
+            "provolone",
+            "parmesão"
+        ],
+        "preco": 38.5,
+        "img": "/img/calabresa.jpg",
+        "destaque": true
+    },
+    {
+        "id": 9,
+        "nome": "Meat & Bacon",
+        "ingredientes": [
+            "mussarela",
+            "calabresa",
+            "bacon"
+        ],
+        "preco": 38.5,
+        "img": "/img/fracatu.jpg",
+        "destaque": true
+    },
+    {
+        "id": 10,
+        "nome": "Rucula",
+        "ingredientes": [
+            "rucula",
+            " cebola",
+            " calabresa"
+        ],
+        "preco": "33.99",
+        "img": "/img/marguerita.jpg",
+        "destaque": false
+    },
+    {
+        "id": 11,
+        "nome": "Mineira",
+        "ingredientes": [
+            "Queijo",
+            " oregano",
+            " milho",
+            " pimentão"
+        ],
+        "preco": "26.80",
+        "img": "/img/bg.jpeg",
+        "destaque": false
+    },
+    {
+        "id": 12,
+        "nome": "Bolonhesa",
+        "ingredientes": [
+            "carne moída",
+            " tomate",
+            " cebola",
+            "coentro"
+        ],
+        "preco": "46.7",
+        "img": "/img/pizzaFundo.jpg",
+        "destaque": false
+    }
+]

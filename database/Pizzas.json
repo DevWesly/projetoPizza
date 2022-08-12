@@ -1,81 +1,6 @@
 [
     {
         "id": 1,
-        "nome": "Pepperoni",
-        "ingredientes": [
-            "mussarela",
-            "pepperoni",
-            "cebola"
-        ],
-        "preco": 48.5,
-        "img": "/img/pepperoni.jpg",
-        "destaque": false
-    },
-    {
-        "id": 2,
-        "nome": "Fracatupiry",
-        "ingredientes": [
-            "mussarela",
-            "frango",
-            "catupiry"
-        ],
-        "preco": 38.65,
-        "img": "/img/fracatu.jpg",
-        "destaque": true
-    },
-    {
-        "id": 3,
-        "nome": "Marguerita",
-        "ingredientes": [
-            "mussarela",
-            "tomate",
-            "manjericão"
-        ],
-        "preco": 33.5,
-        "img": "/img/marguerita.jpg",
-        "destaque": false
-    },
-    {
-        "id": 4,
-        "nome": "Quatro Queijos",
-        "ingredientes": [
-            "mussarela",
-            "gorgonzola",
-            "provolone",
-            "parmesão"
-        ],
-        "preco": 38.5,
-        "img": "/img/quatroqueijos.jpg",
-        "destaque": true
-    },
-    {
-        "id": 5,
-        "nome": "Portuguesa",
-        "ingredientes": [
-            "cebola",
-            "pimentão",
-            "ovo",
-            "mussarela",
-            "presunto"
-        ],
-        "preco": 40.5,
-        "img": "/img/calabresa.jpg",
-        "destaque": true
-    },
-    {
-        "id": 6,
-        "nome": "Caipira",
-        "ingredientes": [
-            "mussarela",
-            "milho verde",
-            "frango"
-        ],
-        "preco": 38.5,
-        "img": "/img/quatroqueijos.jpg",
-        "destaque": true
-    },
-    {
-        "id": 7,
         "nome": "Napolitana",
         "ingredientes": [
             "mussarela",
@@ -88,7 +13,7 @@
         "destaque": true
     },
     {
-        "id": 8,
+        "id": 2,
         "nome": "Baiana",
         "ingredientes": [
             "mussarela",
@@ -101,15 +26,145 @@
         "destaque": true
     },
     {
-        "id": 9,
-        "nome": "Meat & Bacon",
+        "id": 3,
+        "nome": "Rucula",
+        "ingredientes": [
+            "rucula",
+            " cebola",
+            " calabresa"
+        ],
+        "preco": "33.99",
+        "img": "/img/marguerita.jpg",
+        "destaque": false
+    },
+    {
+        "id": 4,
+        "nome": "Mineira",
+        "ingredientes": [
+            "Queijo",
+            " oregano",
+            " milho",
+            " pimentão"
+        ],
+        "preco": "26.80",
+        "img": "/img/bg.jpeg",
+        "destaque": false
+    },
+    {
+        "id": 5,
+        "nome": "Bolonhesa",
+        "ingredientes": [
+            "carne moída",
+            " tomate",
+            " cebola",
+            "coentro"
+        ],
+        "preco": "46.7",
+        "img": "/img/pizzaFundo.jpg",
+        "destaque": false
+    },
+    {
+        "id": 6,
+        "nome": "Bacon",
+        "ingredientes": [
+            "Bacon",
+            " mussarela",
+            " calabresa",
+            " cebola",
+            " tomate"
+        ],
+        "preco": "70.7",
+        "img": "/img/calabresa.jpg",
+        "destaque": false
+    },
+    {
+        "id": 7,
+        "nome": "Rucula",
+        "ingredientes": [
+            "a",
+            "b ",
+            "c",
+            " d "
+        ],
+        "preco": 100,
+        "img": "/img/marguerita.jpg",
+        "destaque": false
+    },
+    {
+        "id": 8,
+        "nome": "Napolitana",
         "ingredientes": [
             "mussarela",
-            "calabresa",
-            "bacon"
+            "gorgonzola",
+            "provolone",
+            "parmesão"
+        ],
+        "preco": 55.5,
+        "img": "/img/marguerita.jpg",
+        "destaque": true
+    },
+    {
+        "id": 9,
+        "nome": "Baiana",
+        "ingredientes": [
+            "mussarela",
+            "gorgonzola",
+            "provolone",
+            "parmesão"
         ],
         "preco": 38.5,
-        "img": "/img/fracatu.jpg",
+        "img": "/img/calabresa.jpg",
         "destaque": true
+    },
+    {
+        "id": 11,
+        "nome": "Rucula",
+        "ingredientes": [
+            "rucula",
+            " cebola",
+            " calabresa"
+        ],
+        "preco": "33.99",
+        "img": "/img/marguerita.jpg",
+        "destaque": false
+    },
+    {
+        "id": 12,
+        "nome": "Mineira",
+        "ingredientes": [
+            "Queijo",
+            " oregano",
+            " milho",
+            " pimentão"
+        ],
+        "preco": "26.80",
+        "img": "/img/bg.jpeg",
+        "destaque": false
+    },
+    {
+        "id": 13,
+        "nome": "Bolonhesa",
+        "ingredientes": [
+            "carne moída",
+            " tomate",
+            " cebola",
+            "coentro"
+        ],
+        "preco": "46.7",
+        "img": "/img/pizzaFundo.jpg",
+        "destaque": false
+    },
+    {
+        "id": 14,
+        "nome": "Paraguaia",
+        "ingredientes": [
+            "Apresuntado",
+            " Chedar",
+            " boi",
+            " peito de frango"
+        ],
+        "preco": 70.1,
+        "img": "/img/istockphoto-1263908918-612x612.jpg",
+        "destaque": false
     }
 ]
