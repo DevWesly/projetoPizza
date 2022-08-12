@@ -7,12 +7,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/styles.css">	
 	<!-- <link rel="stylesheet" href="/css/index.css"> -->
-	<!-- <link rel="stylesheet" href="/css/pizza">	 -->
+	<link rel="stylesheet" href="/css/pizza.css">
+	<link rel="stylesheet" href="/css/header.css">
 </head>
-<form action="/deletar/<%= pizza.id %>?_method=DELETE" method="POST"><button>deletar</button></form>
 
 <body>
-	<link rel="stylesheet" href="/css/pizza.css">
+	<%- include('./partials/header.ejs')%>
 	<main>
             <h1><%= pizza.nome %></h1>
 		<h2>R$<%= pizza.preco %></h2>
@@ -22,5 +22,7 @@
 		<a href="/pizzas/<%= idAnterior %>" class="prev">&lt;</a>
 		<a href="/pizzas/<%= idProxima %>" class="next">&gt;</a>
 	</main>
+<form  action="/deletar/<%= pizza.id %>?_method=DELETE" method="POST"><button style="width: 160px; font-size: large; ">DELETAR</button></form>
+
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizzaria Fantástica</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/pizza.css">
+	<link rel="stylesheet" href="/css/header.css">
+
+
+	<!-- <link rel="stylesheet" href="/css/index.css"> -->
+	<!-- <link rel="stylesheet" href="/css/pizza">	 -->
+</head>
+
+
+<body>
+	<%- include('./partials/header.ejs')%>
+
+	<main>
+		<h1><%= pizza.nome %></h1>
+		<h2>R$<%= pizza.preco %></h2>
+		<img src="<%= pizza.img %>" alt="<%= pizza.nome %>">
+		<div> Ingredientes <%= pizza.ingredientes %></div>
+	</main>
+</body>
+
+<form action="/atualizar/<%= pizza.id %>?_method=PUT" method="POST">
+
+	<h1>Preencha os novos dados</h1><br>
+
+	<label for="nomePizza"> Nome da pizza </label><input type="text" name="nomePizza" id="">
+
+	<label for="ingredientes">Ingredientes </label><input type="text" name="ingredientes" id="">
+
+	<label for="preco">Preço </label><input type="text" name="preco" id="">
+
+	<label for="img"> Imagem </label><input type="file" name="img" id=""><br>
+	
+	<button>Atualizar</button>
+</form>
+
+</html>

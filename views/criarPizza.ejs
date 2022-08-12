@@ -7,18 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Pizza</title>
     <link rel="stylesheet" href="/css/criar.css">
-	<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
-
 <body>
-    <h1>Adicionar nova Pizza</h1>
-    <form action="/criar" method="post">
-        <label for="nomePizza"> Nome da pizza </label><input type="text" name="nomePizza" id=""><br>
-        <label for="ingredientes"> Ingredientes </label><input type="text" name="ingredientes" id=""><br>
-        <label for="preco"> Preço </label><input type="text" name="preco" id=""><br>
-        <label for="img"> Imagem </label><input type="file" name="img" id=""><br>
-        <button type="submit"> Adicionar </button>
-    </form>
+   <%- include('./partials/header.ejs')%>
+    <div class="container">
+
+        <div class="form">
+
+            <form action="/criar" method="post">
+                <h1>Adicionar nova Pizza</h1>
+                <fieldset>
+                    <label for="nomePizza"> Nome da pizza </label><input type="text" name="nomePizza" id=""><br>
+                    <label for="ingredientes"> Ingredientes </label><input type="text" name="ingredientes" id=""><br>
+                    <label for="preco"> Preço </label><input type="text" name="preco" id=""><br>
+                    <label for="img"> Imagem </label><input type="file" name="img" id=""><br>
+                    <button type="submit"> Adicionar </button>
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
