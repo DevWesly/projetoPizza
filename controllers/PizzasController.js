@@ -3,6 +3,9 @@ let pizzas = require("../database/Pizzas.json");
 const fs = require('fs');
 
 const path = require('path');
+const {
+    parse
+} = require("path");
 
 module.exports = {
     listar: (req, res) => {
@@ -14,13 +17,13 @@ module.exports = {
     },
     delete: (req, res) => {
         let id = req.params.id;
-        for (let i = 0; i < pizzas.length; i++){
-            if(pizzas[i].id == id){
-                pizzas.splice(i,1);
+        for (let i = 0; i < pizzas.length; i++) {
+            if (pizzas[i].id == id) {
+                pizzas.splice(i, 1);
                 fs.writeFileSync(path.join(__dirname, '../database/Pizzas.json'), JSON.stringify(pizzas, null, 4));
             }
         }
-    
+
         res.redirect('/');
 
     },
@@ -84,7 +87,7 @@ module.exports = {
             "id": pizzas[pizzas.length - 1].id + 1,
             "nome": req.body.nomePizza,
             "ingredientes": req.body.ingredientes.split(","),
-            "preco": req.body.preco,
+            "preco":parseFloat(req.body.preco.replace(",", ".")),
             "img": '/img/' + req.body.img,
             "destaque": false
         };
@@ -94,5 +97,44 @@ module.exports = {
         res.redirect('/');
 
 
+    },
+
+    atualizar: (req, res) => {
+
+        res.render('indexAtualizar.ejs', {
+            pizzas,
+            busca: ""
+        });
+    },
+
+    atualizar2Etapa: (req, res) => {
+        let id = req.params.id;
+        let posicao = pizzas.findIndex(p => p.id == id);
+        let pizza = pizzas[posicao];
+
+        res.render('viewAtualizar', {
+            pizza
+        });
+    },
+
+    atualizar3Etapa: (req, res) => {
+        let pizza = {
+            "id": parseInt(req.params.id),
+            "nome": req.body.nomePizza,
+            "ingredientes": req.body.ingredientes.split(","),
+            "preco": parseFloat(req.body.preco.replace(",", ".")),
+            "img": '/img/' + req.body.img,
+            "destaque": false
+        };
+
+        for (let i = 0; i < pizzas.length; i++) {
+            if (pizzas[i].id == pizza.id) {
+                pizzas.splice(i, 1, pizza);
+                fs.writeFileSync(path.join(__dirname, '../database/Pizzas.json'), JSON.stringify(pizzas, null, 4));
+            }
+        };
+
+
+        res.redirect('/atualizar');
     }
 };

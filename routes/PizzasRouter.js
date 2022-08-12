@@ -23,6 +23,12 @@ router.get('/criar', PizzasCrontroller.criarPizza);
 
 router.post('/criar', PizzasCrontroller.guardarPizza);
 
+router.get('/atualizar',PizzasCrontroller.atualizar);
+router.get('/atualizar/:id', PizzasCrontroller.atualizar2Etapa);
+router.put('/atualizar/:id',PizzasCrontroller.atualizar3Etapa);
+
+
+
 
 
 
