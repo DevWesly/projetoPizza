@@ -9,7 +9,7 @@ var methodOverride = require('method-override');
 
 // configurando servidor para receber e trabalhar com metodo post 
 // e trabalhar com as informações via json
-app.use(express.json());
+app.use(express.json());    
 
 app.use(express.urlencoded({extended:false}));
 
@@ -40,7 +40,7 @@ const RotaTeste = require("./routes/rotaTeste")
 
 
 //Utilizando o PizzasRouter como roteador da aplicação
-app.use('/',PizzasRouter);
+app.use(PizzasRouter);
 
 //utilizando o RotaTeste como roteador da aplicação
 app.use(RotaTeste);

@@ -2,10 +2,8 @@ let pizzas = require("../database/Pizzas.json");
 
 const fs = require('fs');
 
-const path = require('path');
-const {
-    parse
-} = require("path");
+    const path = require('path');
+
 
 module.exports = {
     listar: (req, res) => {

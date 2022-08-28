@@ -8,7 +8,7 @@ const router = express.Router();
 //importando PizzasCrontroller
 const PizzasCrontroller = require("../controllers/PizzasController");
 
-//criando uma rotas get 
+//criando rotas get 
 router.get('/',PizzasCrontroller.listar);
 
 router.get('/pizzas/busca', PizzasCrontroller.buscar);
